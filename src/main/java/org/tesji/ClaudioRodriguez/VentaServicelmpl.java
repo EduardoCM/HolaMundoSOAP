@@ -10,7 +10,7 @@ public class VentaServicelmpl implements VentaService{
     
     
     @Override
-    public String ventaproducto(String nombre, String precio) {
+    public String ventaproducto(String precio) {
         String prod="el preci del producto es: $";
         switch(precio){
             case "pantalon":
