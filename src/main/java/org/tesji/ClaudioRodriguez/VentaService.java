@@ -9,11 +9,10 @@ import javax.jws.WebService;
  * @author root
  */
 @WebService
-public class VentaService {
+public interface VentaService {
     
     @WebMethod
-    public String ventaproducto(String nombre String precio);
+    public String ventaproducto(String nombre, String precio);
     
-     
-    
+      
 }
