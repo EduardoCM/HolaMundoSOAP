@@ -2,6 +2,7 @@ package org.ipn.escom.soap;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.jws.WebService;
 
@@ -13,6 +14,8 @@ import javax.jws.WebService;
 @WebService(endpointInterface = "org.ipn.escom.soap.HolaMundoService")
 public class HolaMundoServiceImpl implements HolaMundoService {
 
+    private static  Logger LOG = Logger.getLogger(HolaMundoServiceImpl.class.getName());
+    
     @Override
     public String saludar(String nombre) {
 
@@ -20,4 +23,29 @@ public class HolaMundoServiceImpl implements HolaMundoService {
 
     }
 
+    @Override
+    public String despedir(String nombre, String horario) {
+    
+        String despedida = "Adios que tengas nonit@";
+        switch(horario){
+            case "mañana":
+                despedida += " Mañana";
+            break;
+            case "tarde":
+             despedida += " Tarde";
+            break;
+            
+            case "noche":
+                despedida += " Noche";
+                break;
+                
+            case "madrugada":
+                despedida += " La seguimos en mi depa";
+                break;
+                
+        }
+        return despedida;
+   
+}
+    
 }

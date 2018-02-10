@@ -12,4 +12,7 @@ public interface HolaMundoService {
     
     @WebMethod
     public String saludar(String nombre);
+    
+    @WebMethod
+    public String despedir(String nombre, String horario);
 }
