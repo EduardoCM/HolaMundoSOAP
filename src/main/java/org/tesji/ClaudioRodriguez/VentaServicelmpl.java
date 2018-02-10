@@ -4,7 +4,7 @@ import javax.ejb.Stateless;
 import javax.jws.WebService;
 
 @Stateless
-@WebService(endpointInterface = "org.tesji.ClaudioRodriguez.soap.VentaService")
+@WebService(endpointInterface = "org.tesji.ClaudioRodriguez.VentaService")
 
 public class VentaServicelmpl implements VentaService{
     
