@@ -9,8 +9,7 @@ import org.ipn.escom.soap.HolaMundoServiceImpl;
 @WebService(endpointInterface = "org.tesji.ClaudioRodriguez.soap.VentaService")
 
 public class VentaServicelmpl implements VentaService{
-     private static  Logger LOG = Logger.getLogger(HolaMundoServiceImpl.class.getName());
-     
+    
     
     @Override
     public String ventaproducto(String nombre, String precio) {
