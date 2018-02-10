@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package org.tesji.ClaudioRodriguez;
-
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
@@ -16,7 +15,7 @@ import javax.jws.WebService;
 public interface VentaService {
     
     @WebMethod
-    public String ventaproducto(String nombre, String precio);
+    public String ventaproducto( String precio);
     
       
 }

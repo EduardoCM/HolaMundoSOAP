@@ -1,19 +1,17 @@
 package org.tesji.ClaudioRodriguez;
 
-import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.jws.WebService;
-import org.ipn.escom.soap.HolaMundoServiceImpl;
 
 @Stateless
-@WebService(endpointInterface = "org.tesji.ClaudioRodriguez.soap.VentaService")
+@WebService(endpointInterface = "org.tesji.ClaudioRodriguez.VentaService")
 
 public class VentaServicelmpl implements VentaService{
     
     
     @Override
-    public String ventaproducto(String nombre, String precio) {
-        String prod="el preci del producto es: $";
+    public String ventaproducto(String precio) {
+        String prod="el precio del producto es: $";
         switch(precio){
             case "pantalon":
                 prod+="120";
