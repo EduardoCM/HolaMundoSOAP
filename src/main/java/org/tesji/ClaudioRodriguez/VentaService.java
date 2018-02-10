@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package org.tesji.ClaudioRodriguez;
-
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 

@@ -1,9 +1,7 @@
 package org.tesji.ClaudioRodriguez;
 
-import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.jws.WebService;
-import org.ipn.escom.soap.HolaMundoServiceImpl;
 
 @Stateless
 @WebService(endpointInterface = "org.tesji.ClaudioRodriguez.soap.VentaService")
